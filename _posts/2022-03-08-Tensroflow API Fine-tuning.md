@@ -53,7 +53,7 @@ python generate_labelmap.py
 object_detection/configs/tf2 경로의 6에서 받은 모델의 config 파일을 가져와  
 images 폴더에 붙여넣기 해주고 VS code 등을 이용하여 편집 해준다.  
 ```ruby
-num_classes : #원하는 Detection 클래스(label) 수
+num_classes : # 원하는 Detection 클래스(label) 수
 model {
   ssd {
     inplace_batchnorm_update: true
@@ -62,8 +62,8 @@ model {
     ...
 
 train_config 
-#가져온 pre-trained 모델의 체크포인트 경로(object_detection 폴더 기준)
-#detection으로 변경, batch_size 조정
+# 가져온 pre-trained 모델의 체크포인트 경로(object_detection 폴더 기준)
+# detection으로 변경, batch_size 조정
 
 train_config: {
   fine_tune_checkpoint: "pre-trained model name/checkpoint/ckpt-0"
@@ -83,8 +83,7 @@ optimizer {
         }
       }
 
-train_input_reader : # labelmap의 경로와 train.record 경로 입력
-
+# labelmap의 경로와 train.record 경로 입력
 train_input_reader: {
   label_map_path: "images/labelmap.pbtxt"
   tf_record_input_reader {
@@ -92,8 +91,7 @@ train_input_reader: {
   }
 }
 
-eval_input_reader :  # labelmap의 경로와 test.record 경로 입력
-
+# labelmap의 경로와 test.record 경로 입력
 eval_input_reader: {
   label_map_path: "images/labelmap.pbtxt"
   shuffle: false
@@ -103,6 +101,31 @@ eval_input_reader: {
   }
 }
 ```
+&nbsp;  
+**8. training 폴더 생성**  
+research/object_detection 경로에 training 폴더 생성
+labelmap.pbtxt와 앞선 config 파일을 붙여넣기  
+&nbsp;  
+**9. 모델 훈련**  
+Anaconda Prompt를 사용하여 다음 명령을 입력하여 학습 시작
+```ruby
+# 위치 변경
+cd /content/drive/My Drive/Pororo/object_detection
+
+# 학습 시작
+python model_main_tf2.py --pipeline_config_path=training/ssd_efficientdet_d0_512x512_coco17_tpu-8.config --model_dir=training --alsologtostderr
+
+# 에러가 있을 경우 pip install 활용하여 필요한 라이브러리 설치
+```  
+&nbsp;  
+**10. 모델 저장**
+```ruby
+python exporter_main_v2.py --trained_checkpoint_dir=training --pipeline_config_path=training/ssd_efficientdet_d0_512x512_coco17_tpu-8.config --output_directory inference_graph
+```
+위 명령 실행 시 object_detection 폴더 내에 inference_graph 폴더가 생성됨
+
+
+
 
 
 
