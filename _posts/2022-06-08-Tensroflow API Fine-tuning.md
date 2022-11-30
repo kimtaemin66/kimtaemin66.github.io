@@ -5,7 +5,7 @@ date: 2022-06-08 14:30:23 +0900
 category: Tensorflow
 ---
 &nbsp;  
-**텐서플로우의 pre-trained 모델을 사용하여 미세조정(Fine-tunning)을 통해 목적에 맞는 custom model 제작**  
+**텐서플로우의 pre-trained 모델을 사용하여 미세조ㄴ정(Fine-tunning)을 통해 목적에 맞는 custom model 제작**  
 선행 : Anaconda, Tensorflow, VS code,  NVIDIA CUDA 설치  
 &nbsp;  
 
