@@ -6,9 +6,8 @@ category: Tensorflow
 ---
 &nbsp;  
 **텐서플로우의 pre-trained 모델을 사용하여 미세조정(Fine-tunning)을 통해 목적에 맞는 custom model 제작**  
-선행 : Anaconda, Tensorflow, VS code,  NVIDIA CUDA 설치, **[데이터 준비](datalabelling.md)**
+선행 : Anaconda, Tensorflow, VS code,  NVIDIA CUDA 설치, **[데이터 준비](datalabelling.md)**  
 &nbsp;  
-
 **1. [텐서플로우 API GIT](https://github.com/tensorflow/models)에서 ZIP으로 다운로드**  
 원하는 경로에 압축 해제 후, research 폴더만 남기고 전부 삭제  
 ![oddownload](/images/oddownload.jpg)  
