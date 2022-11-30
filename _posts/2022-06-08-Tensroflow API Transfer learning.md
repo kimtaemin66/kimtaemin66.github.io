@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Tensorflow Object Detection API Fine-tunning
+title: Tensorflow Object Detection API Transfer Learning
 date: 2022-06-08 14:30:23 +0900
 category: Tensorflow
 ---
 &nbsp;  
-**텐서플로우의 pre-trained 모델을 사용하여 미세조정(Fine-tunning)을 통해 목적에 맞는 custom model 제작**  
+**텐서플로우의 pre-trained 모델을 사용하여 전이학습(Transfer Learning)을 통해 목적에 맞는 custom model 제작**  
 선행 : Anaconda, Tensorflow, VS code,  NVIDIA CUDA 설치, **[데이터 준비](https://kimtaemin66.github.io/tensorflow/2022/06/01/datalabelling.html)**  
 &nbsp;  
 **1. [텐서플로우 API GIT](https://github.com/tensorflow/models)에서 ZIP으로 다운로드**  
