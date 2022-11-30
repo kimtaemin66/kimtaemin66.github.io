@@ -46,7 +46,7 @@ python generate_labelmap.py
 위와 같이 labelmap.pbtxt 파일이 생성된다.  
 &nbsp;  
 **6. pre-trained model 가져오기**  
-[Tensorflow 2 Model ZOO](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)에서 학습이 이루어진 model을 가져올 수 있다.  
+**[Tensorflow 2 Model ZOO](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)**에서 학습이 이루어진 model을 가져올 수 있다.  
 다운로드 받은 후 object detection 폴더에 압축을 해제 한다.  
 &nbsp;  
 **7. 파라미터 수정**  
