@@ -6,7 +6,7 @@ category: Tensorflow
 ---
 &nbsp;  
 **텐서플로우의 pre-trained 모델을 사용하여 미세조정(Fine-tunning)을 통해 목적에 맞는 custom model 제작**  
-선행 : Anaconda, Tensorflow, VS code,  NVIDIA CUDA 설치, **[데이터 준비](datalabelling.md)**  
+선행 : Anaconda, Tensorflow, VS code,  NVIDIA CUDA 설치, **[데이터 준비](https://kimtaeim66.github.io/tensorflow/2022/06/01/datalabelling.html)**  
 &nbsp;  
 **1. [텐서플로우 API GIT](https://github.com/tensorflow/models)에서 ZIP으로 다운로드**  
 원하는 경로에 압축 해제 후, research 폴더만 남기고 전부 삭제  
@@ -14,7 +14,7 @@ category: Tensorflow
 &nbsp;  
 **2. [제너레이트 파일 GIT](https://github.com/hojihun5516/object_detection_setting)에서 ZIP으로 다운로드**   
 ../research/object_detection 폴더에 압축 해제  
-**[데이터 준비](datalabelling.md)에서 라벨링된 이미지가 들어있는 images 폴더를 ../research/object_detection 폴더에 붙여넣기**  
+**[데이터 준비](https://kimtaeim66.github.io/tensorflow/2022/06/01/datalabelling.html)에서 라벨링된 이미지가 들어있는 images 폴더를 ../research/object_detection 폴더에 붙여넣기**  
  &nbsp;  
 **3. xml 파일을 csv로 컨버팅**  
 이미지에 대한 라벨링 파일인 xml을 csv로 변환시켜 준다.  
